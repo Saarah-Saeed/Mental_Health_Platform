@@ -1,19 +1,19 @@
+import { useEffect, useState } from "react";
+
 function Home() {
+  const [message, setMessage] = useState("");
+
+  useEffect(() => {
+    fetch("http://localhost:5000/api/test")
+      .then((res) => res.json())
+      .then((data) => setMessage(data.message))
+      .catch((err) => console.log(err));
+  }, []);
+
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center px-6 text-center">
-      
-      <h1 className="text-4xl font-bold text-gray-800 mb-4">
-        You are not alone 💙
-      </h1>
-
-      <p className="text-gray-600 max-w-xl mb-6">
-        A safe space to talk, share, heal, and connect with people who understand.
-      </p>
-
-      <button className="bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600">
-        Get Support
-      </button>
-
+    <div>
+      <h1>Mental Health Platform 💙</h1>
+      <p>{message}</p>
     </div>
   );
 }

@@ -11,6 +11,12 @@ app.get("/", (req, res) => {
   res.send("Mental Health Backend Running 🚀");
 });
 
+app.get("/api/test", (req, res) => {
+  res.json({
+    message: "Backend connected successfully 🚀"
+  });
+});
+
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
