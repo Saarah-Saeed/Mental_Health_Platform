@@ -13,6 +13,9 @@ function Navbar() {
       <Link className="text-gray-700 hover:text-blue-500" to="/create-story">
        Create Story
        </Link>
+       <Link className="text-gray-700 hover:text-blue-500" to="/login">
+  Login
+</Link>
      </div>
     </nav>
   );
