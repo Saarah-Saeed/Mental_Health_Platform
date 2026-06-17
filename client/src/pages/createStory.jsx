@@ -5,8 +5,10 @@ function CreateStory() {
   const [content, setContent] = useState("");
 
   const handleSubmit = async (e) => {
+    console.log("Button clicked");
     e.preventDefault();
 
+    console.log("Sending request...");
     const response = await fetch(
       "http://localhost:5000/api/posts/create",
       {
@@ -24,6 +26,7 @@ function CreateStory() {
     );
 
     const data = await response.json();
+    console.log(data);
     alert(data.message);
 
     setTitle("");
