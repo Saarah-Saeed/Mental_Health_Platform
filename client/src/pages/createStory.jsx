@@ -26,6 +26,7 @@ function CreateStory() {
     );
 
     const data = await response.json();
+    alert("Request completed");
     console.log(data);
     alert(data.message);
 
