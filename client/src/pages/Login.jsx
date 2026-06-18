@@ -45,7 +45,7 @@ function Login() {
         <input
           className="w-full border p-3 rounded mb-4"
           type="email"
-         
+          placeholder="Enter email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
