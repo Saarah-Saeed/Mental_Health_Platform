@@ -15,7 +15,7 @@ router.post("/create", async (req, res) => {
     });
 
     res.status(201).json({
-      message: "Post created successfully 🎉",
+      message: "Post created successfully ",
       post,
     });
 
