@@ -28,7 +28,7 @@ router.post("/create", async (req, res) => {
   }
 });
 
-router.get("/", asyn (req, res) => {
+router.get("/", async (req, res) => {
   try {
     const posts = await Post.find()
       .populate("author", "name email")
