@@ -31,7 +31,7 @@ router.post("/create", async (req, res) => {
 router.get("/", async (req, res) => {
   try {
     const posts = await Post.find()
-      .populate("author", "nme email")
+      .populate("author", "name email")
       .sort({ createdAt: -1 });
 
     res.status(200).json(posts);
