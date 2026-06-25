@@ -21,7 +21,7 @@ const postSchema = new mongoose.Schema(
 
     category: {
       type: String,
-      enum: ["story", "pem", "thought"],
+      enum: ["story", "poem", "thought"],
       default: "thouht",
     },
   },
