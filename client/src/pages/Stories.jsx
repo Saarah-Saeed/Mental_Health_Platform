@@ -13,7 +13,7 @@ function Stories() {
   return (
     <div className="min-h-screen bg-blue-50 p-8">
       <h1 className="text-4xl font-bold text-center text-blue-700 mb-8">
-        Community Stories 💙
+        Community Stories 
       </h1>
 
       <div className="max-w-4xl mx-auto space-y-6">
