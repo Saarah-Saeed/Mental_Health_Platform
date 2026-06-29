@@ -19,7 +19,7 @@ function Stories() {
       <div className="max-w-4xl mx-auto space-y-6">
         {posts.length === 0 ? (
           <p className="text-center text-gray-500">
-            No stories avilable yet.
+            No stories available yet.
           </p>
         ) : (
           posts.map((post) => (
