@@ -11,7 +11,7 @@ function Navbar() {
       <Link className="text-gray-700 hover:text-blue-500" to="/book">Book</Link>
       <Link className="text-gray-700 hover:text-blue-500" to="/stories">Stories</Link>
       <Link className="text-gray-700 hover:text-blue-500" to="/create-story">
-       Create Story
+       Creat Story
        </Link>
        <Link className="text-gray-700 hover:text-blue-500" to="/login">
   Login
